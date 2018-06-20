@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Create Discount</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create Discount</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dms/tools/discount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[@id='discountPager_left']/table/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='mt_radio']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;make_radio&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;model_radio&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='discountName']</td>
+	<td>discount_auto</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@id='all_vehicles']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=AAA Member</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=AARP Member</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=American Express Member</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=Credit Union Member</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=Current {Make} Owner</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=First Responder</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=First Time Buyer</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=Military</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=Recent College Grad</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=Trade Bonus</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>//select[@id='discount_programs']</td>
+	<td>label=USAA Member</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='discount']</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='override_price']</td>
+	<td>1400</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;percentage_discount&quot;]</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#save_specification &gt; span &gt; a.button-style.b_save</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

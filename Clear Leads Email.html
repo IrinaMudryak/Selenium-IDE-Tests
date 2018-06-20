@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Clear Leads Email</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Clear Leads Email</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>loop</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dms/settings/website#leads-email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//tr[${loop}]/td[2]/div/span/div</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars.loop&lt;20</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${loop}]/td[2]/div/span/div</td>
+	<td>mail</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>if (storedVars.mail !=&quot;&quot;) {nextMove=&quot;edit&quot;} else&nbsp;&nbsp;{nextMove=&quot;nextlist&quot;; }</td>
+	<td>nextMove</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${nextMove}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${loop}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotolabel</td>
+	<td>${nextMove}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[${loop}]//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//tr[${loop}]//input[contains(@name, '[email]')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[${loop}]//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${loop}]/td[2]/div/span/div</td>
+	<td>mail</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>if (storedVars.mail !=&quot;&quot;) {nextMove=&quot;edit&quot;} else&nbsp;&nbsp;{nextMove=&quot;nextlist&quot;; }</td>
+	<td>nextMove</td>
+</tr>
+<tr>
+	<td>gotolabel</td>
+	<td>${nextMove}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>nextlist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars.loop ++}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

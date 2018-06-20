@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Registration Form</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Registration Form</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/registration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='email']</td>
+	<td>test_7@dxloo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='password']</td>
+	<td>111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='cpassword']</td>
+	<td>111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='first_name']</td>
+	<td>Anna</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='last_name']</td>
+	<td>Booley</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='marketplace_company_name']</td>
+	<td>Company Name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='name']</td>
+	<td>dealer</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='marketplace_representative_name']</td>
+	<td>Representative</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='address']</td>
+	<td>street</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='country_id']</td>
+	<td>label=USA</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='disabledSelect']</td>
+	<td>label=AMERICAN SAMOA</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//select[@id='disabledSelect']/option[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='city_id']</td>
+	<td>label=PAGO PAGO</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName( 'dws_registration_form')[0].getElementsByTagName('input')[19].value=&quot;777-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName( 'dws_registration_form')[0].getElementsByTagName('input')[17].value=&quot;Street&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='zip']</td>
+	<td>55656</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='marketplace_fax_number']</td>
+	<td>8844444444</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='marketplace_tax_id']</td>
+	<td>656565kl</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='dealer_driver_license']</td>
+	<td>C:\Users\Home\OneDrive\Изображения\Снимки экрана\Cool cars\33—2014 331.jpg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='state_dealer_license']</td>
+	<td>C:\Users\Home\OneDrive\Изображения\Снимки экрана\Cool cars\128copy — копия.jpeg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Ok</td>
+	<td>Ok</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Order</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Order</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>verifyElementPresent</td>
+	<td>document.getElementsByName('csrf-token')[0];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementsByName('csrf-token')[0].content;</td>
+	<td>token</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${token}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['token'] != &quot;&quot;;</td>
+	<td>true</td>
+</tr> -->
+<tr>
+	<td>select</td>
+	<td>name=year</td>
+	<td>label=2015</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=motorized_type</td>
+	<td>label=CARS &amp; TRUCKS &amp; VANS</td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>50000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=make</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=model</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=trim</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=body</td>
+	<td>index=3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=drive_type</td>
+	<td>label=4 WHEEL DRIVE</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=price</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=engine</td>
+	<td>label=8 CYLINDER</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=transmission</td>
+	<td>label=AUTOMATIC</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=fuel_type</td>
+	<td>label=DIESEL</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=options[]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='options[]'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='options[]'])[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='options[]'])[20]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='options[]'])[15]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='options[]'])[17]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='options[]'])[12]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=options_extra</td>
+	<td>Test TEXT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=first_name</td>
+	<td>Rick</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=last_name</td>
+	<td>Last</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>test_3@dxloo.com</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByName('phone')[0].value=&quot;777-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=international_phone</td>
+	<td>888888888</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=options_extra</td>
+	<td>Test TEXT Options</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=comments</td>
+	<td>Test comments</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForEval</td>
+	<td>window.$.active </td>
+	<td>0</td>
+</tr>
+<!-- <tr>
+	<td>storeEval</td>
+	<td>Date();</td>
+	<td>CurrentDate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CurrentDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${CurrentDate}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['date'].substr(4,17)</td>
+	<td>datecut</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${datecut}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.text-center &gt; div.text-center</td>
+	<td>OK</td>
+</tr> -->
+<tr>
+	<td>verifyText</td>
+	<td>//*[@class='btn btn-primary btn-message-ok']/span</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Leads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.isElementPresent('xpath=//tr[2]/td[2]/a')</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[2]/td[2]/a</td>
+	<td>FirstCellText</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['FirstCellText'].substr(0,89)</td>
+	<td>ORDER - 1 week, Rick Last, 777-777-7777, international phone: 888888888, test_3@dxloo.com</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.2</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.3</td>
+	<td>Order</td>
+</tr>
+<!-- <tr>
+	<td>storeText</td>
+	<td>//tr[2]/td[5]</td>
+	<td>LeadsTime</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['LeadsTime'].substr(0,17)</td>
+	<td>leadsdate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>leadsdateclear</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdateclear}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>${datecut}</td>
+</tr> -->
+</tbody></table>
+</body>
+</html>

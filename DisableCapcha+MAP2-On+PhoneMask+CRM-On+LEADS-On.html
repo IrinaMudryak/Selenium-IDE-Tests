@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>EnableCapcha</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">EnableCapcha</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>window.location</td>
+	<td>url</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${url}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${url}</td>
+	<td>carenturl</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['carenturl'].lastIndexOf(&quot;website#general&quot;)</td>
+	<td>onpage</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${onpage}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>if(${onpage}==-1) {nextStep='loadpage'} else {nextStep='passload'}</td>
+	<td>nextStep</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${nextStep}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotolabel</td>
+	<td>${nextStep}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>loadpage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dms/settings/website#general</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[text()='Edit'][1])</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>passload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[text()='Edit'][1])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>xpath=(//input[@name='forms_captcha'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[text()='Save'][1])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementById(&quot;jquery_version&quot;).getElementsByTagName(&quot;div&quot;)[0].getElementsByTagName(&quot;a&quot;)[0].click();</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=jquery_version</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=jquery_version</td>
+	<td>1.11.2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[16]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=tab7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//tr[@id='localization_currency']//a[contains(text(),'Edit')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=localization_currency_symbol</td>
+	<td>$</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[27]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='localization_phone_mask_input']/td[2]/div/div/span[2]/span/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByName(&quot;localization_phone_mask&quot;)[0].value=&quot;999-999-9999&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='phoneMask']/div[2]/span/span/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='localization_website_characters']//a[contains(text(),'Edit')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='characters_website']</td>
+	<td>label=5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='localization_website_characters']//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='localization_zipcode_system']/td[2]//a[contains(text(),'Edit')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>xpath=(//input[@name='localization_zipcode_system'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='localization_zipcode_system']//a[contains(text(),'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>doubleClickAt</td>
+	<td>//div[@id='user_tree']/ul/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#user_editor_tab4 &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(text(),'Customers')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=crm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=crm_leads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(text(),'Tools')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=addon_make_a_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=addon_make_a_page_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//span[@id='user_editor_save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ui-dialog-title-user_editor</td>
+	<td>${openStatus}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

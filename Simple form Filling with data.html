@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.irinam.motorboxx.goxloo.com" />
+<title>Simple form Filling with data</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Simple form Filling with data</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>loop</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars.loop&lt;300</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/contactus.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='first_name'])[1]</td>
+	<td>Tom</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='last_name'])[1]</td>
+	<td>Great</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='email'])[1]</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=street</td>
+	<td>Street Adress</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=zip</td>
+	<td>651075</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=state</td>
+	<td>Texas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=city</td>
+	<td>Texas City</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=international_phone</td>
+	<td>88888888888888888888</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByName('phone')[0].value=&quot;777-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//form[contains(@class, 'contact_us_form')]//*[contains(@class, 'btn-submit')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.text-center &gt; div.text-center</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars.loop ++}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

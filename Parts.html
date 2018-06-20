@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Parts</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Parts</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/parts.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>verifyElementPresent</td>
+	<td>document.getElementsByName('csrf-token')[0];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementsByName('csrf-token')[0].content;</td>
+	<td>token</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${token}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['token'] != &quot;&quot;;</td>
+	<td>true</td>
+</tr> -->
+<tr>
+	<td>select</td>
+	<td>name=year</td>
+	<td>label=2017</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=motorized_type</td>
+	<td>label=CARS &amp; TRUCKS &amp; VANS</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=make</td>
+	<td>label=ALFA ROMEO</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=model</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=vin</td>
+	<td>45654646484154878</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=odometer</td>
+	<td>7474</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=trim</td>
+	<td>label=No Trim</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pnum[0]</td>
+	<td>Part one</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pdesc[0]</td>
+	<td>description one</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pnum[1]</td>
+	<td>Part two</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pdesc[1]</td>
+	<td>Description two</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=first_name</td>
+	<td>Rick</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=last_name</td>
+	<td>Last</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>test_5@dxloo.com</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByName('phone')[0].value=&quot;777-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address</td>
+	<td>Address</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=city</td>
+	<td>City test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=state</td>
+	<td>State</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=zip</td>
+	<td>655555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=comments</td>
+	<td>Comments</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//*[@class='btn btn-primary btn-submit']</td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>storeEval</td>
+	<td>Date();</td>
+	<td>CurrentDate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CurrentDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${CurrentDate}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['date'].substr(4,17)</td>
+	<td>datecut</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${datecut}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.text-center &gt; div.text-center</td>
+	<td>OK</td>
+</tr> -->
+<tr>
+	<td>verifyText</td>
+	<td>//*[@class='btn btn-primary btn-message-ok']/span</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Leads</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.isElementPresent('xpath=//tr[2]/td[2]/a')</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.1</td>
+	<td>PARTS REQUEST - Rick Last, phone: 777-777-7777, test_5@dxloo.com</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.2</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.3</td>
+	<td>Parts Request</td>
+</tr>
+<!-- <tr>
+	<td>storeText</td>
+	<td>//tr[2]/td[5]</td>
+	<td>LeadsTime</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['LeadsTime'].substr(0,17)</td>
+	<td>leadsdate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>leadsdateclear</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdateclear}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>${datecut}</td>
+</tr> -->
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Opt out</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Opt out</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/opt-out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=first_name</td>
+	<td>Rick</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=last_name</td>
+	<td>Braun</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mi_name</td>
+	<td>Second Name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=city</td>
+	<td>Texas City</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=zip</td>
+	<td>555555</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=state</td>
+	<td>Texas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=street</td>
+	<td>St</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=street</td>
+	<td>Street Adress</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByName('phone')[0].value=&quot;777-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=joint_first_name</td>
+	<td>Joint Nme</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=joint_last_name</td>
+	<td>Joint Last</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=joint_mi_name</td>
+	<td>Second Joint</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=dealership_name</td>
+	<td>dealership Name</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=preferences</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='preferences'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='preferences'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>test_3@dxloo.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=sharing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fa.fa-check</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@class='btn btn-primary btn-message-ok']/span</td>
+	<td>OK</td>
+</tr>
+</tbody></table>
+</body>
+</html>

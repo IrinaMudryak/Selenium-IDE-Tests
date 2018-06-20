@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>EmailaFriend</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">EmailaFriend</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/cars-for-sale.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@title='Vehicle Details']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='btnGroupContainer_1']//*[@data-target=&quot;#emailModal&quot;]</td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>verifyElementPresent</td>
+	<td>document.getElementsByName('csrf-token')[0];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementsByName('csrf-token')[0].content;</td>
+	<td>token</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${token}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['token'] != &quot;&quot;;</td>
+	<td>true</td>
+</tr> -->
+<tr>
+	<td>type</td>
+	<td>xpath=(.//*[@id='emailModal']//input[@name='fr_email'])&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td>test_5@dxloo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(.//*[@id='emailModal']//input[@name='yr_email'])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td>test_5@dxloo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(.//*[@id='emailModal']//input[@name='fr_name'])&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td>Tom</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(.//*[@id='emailModal']//input[@name='yr_name'])&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td>Rick</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//*[@id=&quot;emailModal&quot;]//*[@class='btn btn-primary btn-submit']</td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>storeEval</td>
+	<td>Date();</td>
+	<td>CurrentDate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CurrentDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${CurrentDate}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['date'].substr(4,17)</td>
+	<td>datecut</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${datecut}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.text-center &gt; div.text-center</td>
+	<td>OK</td>
+</tr> -->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='emailModal']//*[@class='btn btn-primary btn-message-ok']/span</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Leads</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.isElementPresent('xpath=//tr[2]/td[2]/a')</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.1</td>
+	<td>Email A Friend from Rick(test_5@dxloo.com) to Tom(test_5@dxloo.com)</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.2</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.3</td>
+	<td>Email A Friend</td>
+</tr>
+<!-- <tr>
+	<td>storeText</td>
+	<td>//tr[2]/td[5]</td>
+	<td>LeadsTime</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['LeadsTime'].substr(0,17)</td>
+	<td>leadsdate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>leadsdateclear</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdateclear}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>${datecut}</td>
+</tr> -->
+</tbody></table>
+</body>
+</html>

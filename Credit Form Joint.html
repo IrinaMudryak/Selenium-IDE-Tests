@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Credit Form Joint</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Credit Form Joint</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/creditform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>verifyElementPresent</td>
+	<td>document.getElementsByName('csrf-token')[0];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementsByName('csrf-token')[0].content;</td>
+	<td>token</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${token}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['token'] != &quot;&quot;;</td>
+	<td>true</td>
+</tr> -->
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Joint')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_year']</td>
+	<td>label=2016</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_motor_type']</td>
+	<td>label=CARS &amp; TRUCKS &amp; VANS</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>window.document.getElementById('cf_make'). disabled == false</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_make']</td>
+	<td>index=5</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>window.document.getElementById('cf_model'). disabled == false</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_model']</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>window.document.getElementById('cf_trim'). disabled == false</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_trim']</td>
+	<td>label=No Trim</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='first_name']</td>
+	<td>Tom</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='last_name']</td>
+	<td>Teshner</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_birth']</td>
+	<td>label=February</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='birth_d']</td>
+	<td>label=03</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='birth_y']</td>
+	<td>label=2015</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='email']</td>
+	<td>test_10@dxloo.com</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_joint_form&quot;)[0].getElementsByTagName('fieldset')[1].getElementsByTagName('input')[2].value=&quot;333-22-4444&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_joint_form&quot;)[0].getElementsByTagName('fieldset')[1].getElementsByTagName('input')[4].value=&quot;777-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_joint_form&quot;)[0].getElementsByTagName('fieldset')[1].getElementsByTagName('input')[9].value=&quot;444-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_joint_form&quot;)[0].getElementsByTagName('fieldset')[2].getElementsByTagName('input')[1].value=&quot;444-555-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='address']</td>
+	<td>Address</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='city']</td>
+	<td>Texas City</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='state']</td>
+	<td>Texas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='zip']</td>
+	<td>56333</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_month']</td>
+	<td>label=February</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_year_moved']</td>
+	<td>label=2014</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='employer']</td>
+	<td>Employer</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='intype']</td>
+	<td>label=1099/Self Employed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='inpay']</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='inmm']</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='inyy']</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@id='jointIndividual']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='hpay']</td>
+	<td>250</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='spay']</td>
+	<td>725-750</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='sbool']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@name='desc']</td>
+	<td>Comments</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=first_name1</td>
+	<td>Co-signer</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=last_name1</td>
+	<td>Last2</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_joint_form&quot;)[0].getElementsByTagName('fieldset')[3].getElementsByTagName('input')[2].value=&quot;444-444-4444&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_joint_form&quot;)[0].getElementsByTagName('fieldset')[3].getElementsByTagName('input')[6].value=&quot;777-77-1111&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_birth_m1']</td>
+	<td>label=March</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='birth_d1']</td>
+	<td>label=16</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='birth_y1']</td>
+	<td>label=2005</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='inpay1']</td>
+	<td>6000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='inmm1']</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='inyy1']</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='inum1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='email1']</td>
+	<td>test_10@dxloo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='employer1']</td>
+	<td>employer2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[2]</td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>storeEval</td>
+	<td>Date();</td>
+	<td>CurrentDate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CurrentDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${CurrentDate}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['date'].substr(4,17)</td>
+	<td>datecut</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${datecut}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.text-center &gt; div.text-center</td>
+	<td>OK</td>
+</tr> -->
+<tr>
+	<td>verifyText</td>
+	<td>//*[@class='btn btn-primary btn-message-ok']/span</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Leads</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.isElementPresent('xpath=//tr[2]/td[2]/a')</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.1</td>
+	<td>CREDIT FORM (JOINT) - Tom Teshner, phone: 777-777-7777, test_10@dxloo.com</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.2</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.3</td>
+	<td>Credit Form</td>
+</tr>
+<!-- <tr>
+	<td>storeText</td>
+	<td>//tr[2]/td[5]</td>
+	<td>LeadsTime</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['LeadsTime'].substr(0,17)</td>
+	<td>leadsdate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>leadsdateclear</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdateclear}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>${datecut}</td>
+</tr> -->
+</tbody></table>
+</body>
+</html>

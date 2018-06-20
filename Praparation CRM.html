@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Praparation CRM</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Praparation CRM</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=CRM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=moduleTab_1_Leads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>if(document.getElementById(&quot;advanced_search_link&quot;)!==null){document.getElementById(&quot;advanced_search_link&quot;).click();document.readyState==complete;document.getElementById(&quot;search_form_clear_advanced&quot;).click();}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email_advanced</td>
+	<td>irina.mudryak@xloo.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=search_form_submit_advanced</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>if(selenium.isElementPresent('id=massall_top')==true){nextMove='deleteLeads'}else {nextMove='finish'}</td>
+	<td>nextMove</td>
+</tr>
+<tr>
+	<td>gotolabel</td>
+	<td>${nextMove}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>deleteLeads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=massall_top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=delete_listview_top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to delete the * selected record(s)?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotolabel</td>
+	<td>finish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>finish</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

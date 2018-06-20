@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Test Drive</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test Drive</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/cars-for-sale.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@title='Vehicle Details']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='btnGroupContainer_1']//*[@data-target=&quot;#test_driveModal&quot;]</td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>verifyElementPresent</td>
+	<td>document.getElementsByName('csrf-token')[0];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementsByName('csrf-token')[0].content;</td>
+	<td>token</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${token}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['token'] != &quot;&quot;;</td>
+	<td>true</td>
+</tr> -->
+<tr>
+	<td>type</td>
+	<td>xpath=(.//*[@id='test_driveModal']//input[@name='first_name'])</td>
+	<td>Rick</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(.//*[@id='test_driveModal']//input[@name='last_name'])</td>
+	<td>Hornemann</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(.//*[@id='test_driveModal']//input[@name='email'])</td>
+	<td>test_3@dxloo.com</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementById(&quot;test_driveModal&quot;).getElementsByTagName(&quot;form&quot;)[0].getElementsByTagName(&quot;fieldset&quot;)[0].getElementsByTagName(&quot;input&quot;)[2].value=&quot;777-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='test_driveModal']/div/div/div[2]/div/div/form/div[2]/fieldset/div[2]/div/div/div/select</td>
+	<td>label=5</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='test_driveModal']/div/div/div[2]/div/div/form/div[2]/fieldset/div[2]/div/div/div[2]/select</td>
+	<td>label=30</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='test_driveModal']/div/div/div[2]/div/div/form/div[2]/fieldset/div[2]/div/div/div[3]/select</td>
+	<td>label=AM</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//*[contains(@class, 'testdrive_form')]//*[@class='btn btn-primary btn-submit']</td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>storeEval</td>
+	<td>Date();</td>
+	<td>CurrentDate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CurrentDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${CurrentDate}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['date'].substr(4,17)</td>
+	<td>datecut</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${datecut}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.text-center &gt; div.text-center</td>
+	<td>OK</td>
+</tr> -->
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='test_driveModal']//*[@class='btn btn-primary btn-message-ok']/span</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Leads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.isElementPresent('xpath=//tr[2]/td[2]/a')</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[2]/td[2]/a</td>
+	<td>FirstCellText</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['FirstCellText'].substr(0,75)</td>
+	<td>REQUEST TEST DRIVE - Rick Hornemann, phone: 777-777-7777, test_3@dxloo.com </td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.2</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.3</td>
+	<td>Test Drive Request</td>
+</tr>
+<!-- <tr>
+	<td>storeText</td>
+	<td>//tr[2]/td[5]</td>
+	<td>LeadsTime</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['LeadsTime'].substr(0,17)</td>
+	<td>leadsdate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>leadsdateclear</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdateclear}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>${datecut}</td>
+</tr> -->
+</tbody></table>
+</body>
+</html>

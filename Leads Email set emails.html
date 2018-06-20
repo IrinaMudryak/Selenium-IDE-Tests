@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Leads Email set emails</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Leads Email set emails</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dms/settings/website#leads-email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//tr[@id='leads_email_credit']//span[contains(@class, 'edit_btn')]</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_credit']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_credit']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_credit[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_credit[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_credit[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_credit[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_credit[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_credit[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_credit']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_order']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_order']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_order[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_order[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_order[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_order[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_order[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_order[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_order']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_tradein']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_tradein']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_tradein[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_tradein[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_tradein[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_tradein[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_tradein[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_tradein[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_tradein']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_parts']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_parts']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_parts[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_parts[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_parts[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_parts[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_parts[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_parts[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_parts']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_service']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_service']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_service[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_service[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_service[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_service[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_service[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_service[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_service']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_offer']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_offer']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_offer[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_offer[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_offer[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_offer[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_offer[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_offer[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_offer']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_testdrive']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_testdrive']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_testdrive[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_testdrive[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_testdrive[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_testdrive[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_testdrive[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_testdrive[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_testdrive']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_contactus']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_contactus']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_contactus[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_contactus[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_contactus[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_contactus[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>css=input[name=&quot;leads_email_contactus[2][types][adf_xml]&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_contactus[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_contactus']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_emailafriend']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_emailafriend']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_emailafriend[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_emailafriend[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_emailafriend[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_emailafriend[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_emailafriend[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_emailafriend[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_emailafriend']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_bidnow']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_bidnow']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_bidnow[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_bidnow[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_bidnow[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_bidnow[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_bidnow[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_bidnow[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_bidnow']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_buynow']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_buynow']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=leads_email_buynow[2][email]</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_buynow[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_buynow[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_buynow[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_buynow[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_buynow[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_buynow']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_optout']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_optout']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_optout[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_optout[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_optout[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_optout[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_optout[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_optout[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_optout']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_notify']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_notify']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_notify[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_notify[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_notify[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_notify[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_notify[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_notify[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_notify']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_videostreaming']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_videostreaming[0][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_videostreaming[0][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_videostreaming[0][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_videostreaming[0][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_videostreaming[0][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_videostreaming[0][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_videostreaming']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_eprice']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_eprice']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_eprice[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_eprice[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_eprice[2][types][plain]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_eprice[2][types][adf]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_eprice[2][types][adf_xml]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_eprice[2][types][analytics]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_eprice']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_discount']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_discount']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=leads_email_discount[2][email]</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>name=leads_email_discount[2][types][html]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>name=leads_email_discount[2][types][plain]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>name=leads_email_discount[2][types][adf]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>name=leads_email_discount[2][types][adf_xml]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>name=leads_email_discount[2][types][analytics]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_discount']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_testimonials_review']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_testimonials_review']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=leads_email_testimonials_review[2][email]</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_testimonials_review[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_testimonials_review']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_registration']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_registration']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_registration[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_registration[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_registration']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_registration_user_list']//span[contains(@class, 'edit_btn')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_registration_user_list']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_add')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='leads_email_registration_user_list[2][email]']</td>
+	<td>test_4@dxloo.com</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//input[@name='leads_email_registration_user_list[2][types][html]']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='leads_email_registration_user_list']//span[contains(@class, 'save_btn')]//a[contains(@class, 'b_save')]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

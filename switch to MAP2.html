@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>switch to MAP2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">switch to MAP2</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dms/settings/website#general</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementById(&quot;jquery_version&quot;).getElementsByTagName(&quot;div&quot;)[0].getElementsByTagName(&quot;a&quot;)[0].click();</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=jquery_version</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=jquery_version</td>
+	<td>1.11.2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[16]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>doubleClickAt</td>
+	<td>//div[@id='user_tree']/ul/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#user_editor_tab4 &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(text(),'Customers')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=crm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=crm_leads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(text(),'Tools')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=addon_make_a_page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=addon_make_a_page_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Save')])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ui-dialog-title-user_editor</td>
+	<td>${openStatus}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

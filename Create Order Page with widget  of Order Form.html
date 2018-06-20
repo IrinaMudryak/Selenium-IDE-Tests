@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Create Order Page with widget  of Order Form</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create Order Page with widget  of Order Form</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dms/tools/make_a_page_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='map']//div[contains(@data-page, 'order')]//div[contains(text(), 'Order')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='map']//div[contains(text(), 'Add New Page')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mapx-button-ico.widget</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=library-keyword-filter</td>
+	<td>Order</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=library-keyword-filter</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=div.ico-widget.widget-form_order</td>
+	<td>xpath=//div[contains(@class, 'ax-container')]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mapx-button-ico.page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>order_auto</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mapx-button-ico.save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mapx-button-ico.activate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ax-btn</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

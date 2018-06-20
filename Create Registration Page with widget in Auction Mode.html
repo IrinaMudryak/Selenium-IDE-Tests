@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Create Registration Page with widget in Auction Mode</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create Registration Page with widget in Auction Mode</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dms/tools/make_a_page_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='map']//div[contains(@data-page, 'registration')]//div[contains(text(), 'Registration')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='map']//div[contains(text(), 'Add New Page')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mapx-button-ico.widget</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=library-keyword-filter</td>
+	<td>Registration</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=library-keyword-filter</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>dragAndDropToObject</td>
+	<td>css=div.ico-widget.widget-registration</td>
+	<td>xpath=//div[contains(@class, 'ax-container')]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.mapx-button-ico.page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[3]</td>
+	<td>registration_auto</td>
+</tr>
+<tr>
+	<td>doubleClick</td>
+	<td>xpath=//div[contains(@id, 'registration')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>xpath=//div[@data-option='auction_mode']//select</td>
+	<td>label=Yes (Standard)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mapx-button-ico.save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mapx-button-ico.activate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.ax-btn</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

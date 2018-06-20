@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Credit Form Short</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Credit Form Short</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/creditform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>verifyElementPresent</td>
+	<td>document.getElementsByName('csrf-token')[0];</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementsByName('csrf-token')[0].content;</td>
+	<td>token</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${token}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['token'] != &quot;&quot;;</td>
+	<td>true</td>
+</tr> -->
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_select_year']</td>
+	<td>label=2015</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_mot_type']</td>
+	<td>label=COMMERCIAL TRUCKS</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>window.document.getElementById('cf_make'). disabled == false</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_make']</td>
+	<td>index=4</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>window.document.getElementById('cf_model'). disabled == false</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_model']</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>window.document.getElementById('cf_trim'). disabled == false</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_trim']</td>
+	<td>label=No Trim</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='first_name']</td>
+	<td>Frank</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='last_name']</td>
+	<td>Dark</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id='cf_birth']</td>
+	<td>label=September</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='birth_d']</td>
+	<td>label=02</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@name='birth_y']</td>
+	<td>label=2013</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='email']</td>
+	<td>test_5@dxloo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='address']</td>
+	<td>Address</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='city']</td>
+	<td>Texas City</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='state']</td>
+	<td>Texas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=zip</td>
+	<td>33333</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_form&quot;)[0].getElementsByTagName('fieldset')[1].getElementsByTagName('input')[2].value=&quot;333-22-4444&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_form&quot;)[0].getElementsByTagName('fieldset')[1].getElementsByTagName('input')[8].value=&quot;777-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_form&quot;)[0].getElementsByTagName('fieldset')[1].getElementsByTagName('input')[9].value=&quot;444-777-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementsByClassName(&quot;credit_form&quot;)[0].getElementsByTagName('fieldset')[2].getElementsByTagName('input')[2].value=&quot;444-555-7777&quot;;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=employer</td>
+	<td>Employer</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=occupant</td>
+	<td>Status</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=b_phone2</td>
+	<td>565</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=inpay</td>
+	<td>4000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=inyy</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=inmm</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=hown</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='hown'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=hpay</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=spay</td>
+	<td>500-800</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=desc</td>
+	<td>Comments</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='b_phone2']</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[2]</td>
+	<td></td>
+</tr>
+<!-- <tr>
+	<td>storeEval</td>
+	<td>Date();</td>
+	<td>CurrentDate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${CurrentDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${CurrentDate}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['date'].substr(4,17)</td>
+	<td>datecut</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${datecut}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.text-center &gt; div.text-center</td>
+	<td>OK</td>
+</tr> -->
+<tr>
+	<td>verifyText</td>
+	<td>//*[contains(@class, 'btn-message-ok')]</td>
+	<td>OK</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Leads</td>
+	<td>3000</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.isElementPresent('xpath=//tr[2]/td[2]/a')</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>waitForEval</td>
+	<td>window.$.active</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.1</td>
+	<td>CREDIT FORM (Short) - Frank Dark, phone: 777-777-7777, test_5@dxloo.com</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.2</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=leads-list.1.3</td>
+	<td>Credit Form</td>
+</tr>
+<!-- <tr>
+	<td>storeText</td>
+	<td>//tr[2]/td[5]</td>
+	<td>LeadsTime</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['LeadsTime'].substr(0,17)</td>
+	<td>leadsdate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>leadsdateclear</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${leadsdateclear}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['leadsdate'].replace(/,/g,&quot;&quot;) </td>
+	<td>${datecut}</td>
+</tr> -->
+</tbody></table>
+</body>
+</html>
